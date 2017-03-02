@@ -1,0 +1,11 @@
+service: motivator
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+
+functions:
+  motivator:
+    handler: handler.motivator
+    events:
+      - alexaSkill
